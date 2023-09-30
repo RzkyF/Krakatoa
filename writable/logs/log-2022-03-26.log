@@ -1,0 +1,80 @@
+CRITICAL - 2022-03-26 11:22:34 --> date() expects at least 1 parameter, 0 given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'date() expects ...', 'C:\\xampp\\htdocs...', 94, Array)
+#1 C:\xampp\htdocs\UkomKasir\app\Controllers\Order.php(94): date()
+#2 C:\xampp\htdocs\UkomKasir\system\CodeIgniter.php(824): App\Controllers\Order->create()
+#3 C:\xampp\htdocs\UkomKasir\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+#4 C:\xampp\htdocs\UkomKasir\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\UkomKasir\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\UkomKasir\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-03-26 11:33:29 --> Call to a member function where() on array
+#0 C:\xampp\htdocs\UkomKasir\system\CodeIgniter.php(824): App\Controllers\Order->index()
+#1 C:\xampp\htdocs\UkomKasir\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+#2 C:\xampp\htdocs\UkomKasir\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\UkomKasir\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\UkomKasir\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-03-26 11:54:42 --> Undefined property: stdClass::$created_at
+#0 C:\xampp\htdocs\UkomKasir\app\Views\transaksi\index.php(54): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 54, Array)
+#1 C:\xampp\htdocs\UkomKasir\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\UkomKasir\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\UkomKasir\system\Common.php(1097): CodeIgniter\View\View->render('transaksi/index', Array, true)
+#4 C:\xampp\htdocs\UkomKasir\app\Controllers\Transaksi.php(18): view('transaksi/index', Array)
+#5 C:\xampp\htdocs\UkomKasir\system\CodeIgniter.php(824): App\Controllers\Transaksi->index()
+#6 C:\xampp\htdocs\UkomKasir\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+#7 C:\xampp\htdocs\UkomKasir\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\UkomKasir\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\UkomKasir\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-03-26 12:46:19 --> Call to a member function where() on array
+#0 C:\xampp\htdocs\UkomKasir\system\CodeIgniter.php(824): App\Controllers\Menu->index()
+#1 C:\xampp\htdocs\UkomKasir\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+#2 C:\xampp\htdocs\UkomKasir\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\UkomKasir\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\UkomKasir\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+ERROR - 2022-03-26 12:48:48 --> Unknown column 'jenis' in 'where clause'
+CRITICAL - 2022-03-26 12:48:48 --> Unknown column 'jenis' in 'where clause'
+#0 C:\xampp\htdocs\UkomKasir\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\UkomKasir\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\UkomKasir\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\UkomKasir\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\UkomKasir\app\Models\MenuModel.php(48): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\UkomKasir\app\Controllers\Menu.php(22): App\Models\MenuModel->Makanan()
+#6 C:\xampp\htdocs\UkomKasir\system\CodeIgniter.php(824): App\Controllers\Menu->index()
+#7 C:\xampp\htdocs\UkomKasir\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+#8 C:\xampp\htdocs\UkomKasir\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\UkomKasir\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\UkomKasir\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2022-03-26 18:36:00 --> Call to a member function getAllData() on array
+#0 C:\xampp\htdocs\UkomKasir\system\View\View.php(214): include()
+#1 C:\xampp\htdocs\UkomKasir\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\UkomKasir\system\Common.php(1097): CodeIgniter\View\View->render('transaksi/index', Array, true)
+#3 C:\xampp\htdocs\UkomKasir\app\Controllers\Transaksi.php(18): view('transaksi/index', Array)
+#4 C:\xampp\htdocs\UkomKasir\system\CodeIgniter.php(824): App\Controllers\Transaksi->index()
+#5 C:\xampp\htdocs\UkomKasir\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+#6 C:\xampp\htdocs\UkomKasir\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\UkomKasir\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\UkomKasir\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2022-03-26 18:45:55 --> Undefined property: stdClass::$id_ord
+#0 C:\xampp\htdocs\UkomKasir\app\Views\order\index.php(74): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 74, Array)
+#1 C:\xampp\htdocs\UkomKasir\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\UkomKasir\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\UkomKasir\system\Common.php(1097): CodeIgniter\View\View->render('order/index', Array, true)
+#4 C:\xampp\htdocs\UkomKasir\app\Controllers\Order.php(28): view('order/index', Array)
+#5 C:\xampp\htdocs\UkomKasir\system\CodeIgniter.php(824): App\Controllers\Order->index()
+#6 C:\xampp\htdocs\UkomKasir\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+#7 C:\xampp\htdocs\UkomKasir\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\UkomKasir\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\UkomKasir\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-03-26 19:04:39 --> Call to undefined method App\Models\MenuModel::Makanan
+#0 C:\xampp\htdocs\UkomKasir\app\Controllers\Menu.php(22): CodeIgniter\Model->__call('Makanan', Array)
+#1 C:\xampp\htdocs\UkomKasir\system\CodeIgniter.php(824): App\Controllers\Menu->index()
+#2 C:\xampp\htdocs\UkomKasir\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+#3 C:\xampp\htdocs\UkomKasir\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\UkomKasir\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\UkomKasir\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}

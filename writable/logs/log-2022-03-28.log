@@ -1,0 +1,67 @@
+CRITICAL - 2022-03-28 10:14:16 --> Call to a member function orderBy() on array
+#0 C:\xampp\htdocs\UkomKasir\system\CodeIgniter.php(824): App\Controllers\User->index()
+#1 C:\xampp\htdocs\UkomKasir\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#2 C:\xampp\htdocs\UkomKasir\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\UkomKasir\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\UkomKasir\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+ERROR - 2022-03-28 10:26:20 --> Column 'id_user' in order clause is ambiguous
+CRITICAL - 2022-03-28 10:26:20 --> Column 'id_user' in order clause is ambiguous
+#0 C:\xampp\htdocs\UkomKasir\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\UkomKasir\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\UkomKasir\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\UkomKasir\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\UkomKasir\app\Models\LogModel.php(50): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\UkomKasir\app\Controllers\Log.php(18): App\Models\LogModel->getAllData()
+#6 C:\xampp\htdocs\UkomKasir\system\CodeIgniter.php(824): App\Controllers\Log->index()
+#7 C:\xampp\htdocs\UkomKasir\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Log))
+#8 C:\xampp\htdocs\UkomKasir\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\UkomKasir\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\UkomKasir\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+ERROR - 2022-03-28 18:14:17 --> Unknown column 'tanggal' in 'where clause'
+CRITICAL - 2022-03-28 18:14:17 --> Unknown column 'tanggal' in 'where clause'
+#0 C:\xampp\htdocs\UkomKasir\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT SUM(tota...', 0)
+#1 C:\xampp\htdocs\UkomKasir\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(tota...')
+#2 C:\xampp\htdocs\UkomKasir\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(tota...')
+#3 C:\xampp\htdocs\UkomKasir\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT SUM(tota...', Array, false)
+#4 C:\xampp\htdocs\UkomKasir\app\Helpers\custom_helper.php(60): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\UkomKasir\app\Views\home\index.php(109): countPenghasilanPerkasir('8')
+#6 C:\xampp\htdocs\UkomKasir\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\UkomKasir\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 C:\xampp\htdocs\UkomKasir\system\Common.php(1097): CodeIgniter\View\View->render('home/index', Array, true)
+#9 C:\xampp\htdocs\UkomKasir\app\Controllers\Home.php(12): view('home/index', Array)
+#10 C:\xampp\htdocs\UkomKasir\system\CodeIgniter.php(824): App\Controllers\Home->index()
+#11 C:\xampp\htdocs\UkomKasir\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#12 C:\xampp\htdocs\UkomKasir\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\UkomKasir\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#14 C:\xampp\htdocs\UkomKasir\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+ERROR - 2022-03-28 18:30:33 --> Unknown column 'id_order' in 'order clause'
+CRITICAL - 2022-03-28 18:30:33 --> Unknown column 'id_order' in 'order clause'
+#0 C:\xampp\htdocs\UkomKasir\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\UkomKasir\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\UkomKasir\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\UkomKasir\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\UkomKasir\app\Models\OrderModel.php(48): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\UkomKasir\app\Controllers\Order.php(36): App\Models\OrderModel->getAllData()
+#6 C:\xampp\htdocs\UkomKasir\system\CodeIgniter.php(824): App\Controllers\Order->new()
+#7 C:\xampp\htdocs\UkomKasir\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+#8 C:\xampp\htdocs\UkomKasir\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\UkomKasir\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\UkomKasir\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+ERROR - 2022-03-28 18:30:40 --> Unknown column 'id_order' in 'order clause'
+CRITICAL - 2022-03-28 18:30:40 --> Unknown column 'id_order' in 'order clause'
+#0 C:\xampp\htdocs\UkomKasir\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\UkomKasir\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\UkomKasir\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\UkomKasir\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\UkomKasir\app\Models\OrderModel.php(48): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\UkomKasir\app\Controllers\Order.php(36): App\Models\OrderModel->getAllData()
+#6 C:\xampp\htdocs\UkomKasir\system\CodeIgniter.php(824): App\Controllers\Order->new()
+#7 C:\xampp\htdocs\UkomKasir\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+#8 C:\xampp\htdocs\UkomKasir\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\UkomKasir\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\UkomKasir\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
